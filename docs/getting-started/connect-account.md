@@ -7,6 +7,9 @@ sidebar_position: 4
 
 Before you can send messages, broadcast, or run chatbots, you need to connect at least one WhatsApp account to Wabot.
 
+The **Web-only bots and widgets** account card is currently marked **Coming Soon** unless your workspace has been enabled for it. Use the supported WhatsApp account connection options shown in your workspace.
+You need account-add permission to open the connection flow. The Unofficial API/QR option is hidden when your workspace does not have Unofficial API access.
+
 ## Navigate to Accounts
 
 1. In the sidebar, click **Accounts** (under GENERAL).
@@ -15,7 +18,7 @@ Before you can send messages, broadcast, or run chatbots, you need to connect at
 
 ![Accounts Page](/img/screenshots/accounts.png)
 
-You'll land on the **Add Account** page with three integration methods.
+You'll land on the **Add Account** page. The available connection methods are shown there.
 
 ![Add Account — Choose Integration Method](/img/screenshots/add-account.png)
 
@@ -80,23 +83,19 @@ Use a dedicated business number, not your personal WhatsApp. Once connected, Wab
 5. Sync your pre-approved templates from **Templates → Pre-Approved → Sync**.
 
 </TabItem>
-<TabItem value="webchat" label="WebChat">
+<TabItem value="webchat" label="WebChat (Coming soon)">
 
-**Best for:** Website-only AI chatbots and widgets.
+**Status:** The product card is visible on the current Add Account page, but it is disabled and labelled **Coming soon**. You cannot create a standalone WebChat account from this screen yet.
 
-**Features:**
-- ✅ No Setup Required
-- ✅ AI Chatbot & Widget
-- ✅ Instant Activation
-- ✅ Web Only
+The card describes the planned experience: a web-only bot and widget with no WhatsApp number. Do not rely on it for a live setup until Wabot enables the option.
 
-**How to connect:**
+**What you can use today:**
 
-1. Click the **WebChat** card.
-2. Enter a name for the widget (e.g. "Website Sales Bot").
-3. Click **Create**.
-4. Copy the embed script and paste it into your website's `<head>` section.
-5. Customize the widget appearance in **Settings**.
+1. Connect an **Unofficial API** or **Official API** account.
+2. Open **Chatbots**, select that account, then choose **Widget Setting**.
+3. Configure and deploy its web widget from there.
+
+See [Chatbots → Widget Settings](/docs/features/chatbots#widget-settings) for the supported deployment flow.
 
 </TabItem>
 </Tabs>
@@ -110,6 +109,10 @@ Once the account shows **Connected**:
 - It appears in the **Accounts** list with a green status indicator.
 - You can now use it in Chatbots, Broadcasts, Automations, and Live Chat.
 - Manage its settings (name, profile picture, auto-reply) by clicking the account card.
+
+:::note
+The Add Account page currently offers two working connection methods: **Unofficial API** and **Official API**. WebChat is presented as a future option.
+:::
 
 ## Managing Multiple Accounts
 

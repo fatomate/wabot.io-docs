@@ -20,7 +20,7 @@ Wabot.io ialah platform automasi WhatsApp serba lengkap yang membolehkan anda:
 - Menguruskan perbualan dari inbox pasukan yang dikongsi
 - Menyediakan balasan automatik berdasarkan kata kunci
 
-Ia menyambung ke WhatsApp anda melalui **imbasan kod QR** (seperti WhatsApp Web), melalui **API Perniagaan WhatsApp Rasmi** (WABA) untuk perniagaan besar, atau sebagai **widget WebChat** untuk chatbot AI laman web sahaja.
+Ia menyambung ke WhatsApp anda melalui **imbasan kod QR** (seperti WhatsApp Web) atau **API Perniagaan WhatsApp Rasmi** (WABA) untuk perniagaan besar. Anda juga boleh menerbitkan widget web daripada tetapan chatbot akaun yang telah disambungkan.
 
 ---
 
@@ -33,9 +33,9 @@ Ia menyambung ke WhatsApp anda melalui **imbasan kod QR** (seperti WhatsApp Web)
 
 ---
 
-## Tiga Jenis Akaun
+## Kaedah Sambungan
 
-Apabila anda **Tambah Akaun** dalam Wabot, anda pilih salah satu daripada tiga kaedah integrasi:
+Apabila anda **Tambah Akaun** dalam Wabot, anda kini boleh memilih salah satu daripada dua kaedah integrasi yang aktif:
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -63,14 +63,11 @@ import TabItem from '@theme/TabItem';
 - Memerlukan templat mesej pra-lulus
 
 </TabItem>
-<TabItem value="webchat" label="WebChat">
+<TabItem value="webchat" label="WebChat (Akan datang)">
 
-**Terbaik untuk:** Chatbot AI dan widget laman web sahaja.
+Kad WebChat dipaparkan pada halaman Tambah Akaun untuk chatbot AI dan widget laman web sahaja, tetapi ia kini dinyahaktifkan dan ditanda **Akan datang**.
 
-- Tiada sambungan WhatsApp diperlukan
-- Chatbot AI + widget + taman permainan
-- Pengaktifan serta-merta
-- Perbualan web sahaja
+Untuk menggunakan widget web hari ini, sambungkan dahulu akaun API Tidak Rasmi atau API Rasmi. Kemudian buka **Chatbots → [akaun] → Widget Setting** untuk mengkonfigurasi dan menerbitkannya.
 
 </TabItem>
 </Tabs>

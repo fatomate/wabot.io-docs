@@ -7,6 +7,8 @@ sidebar_position: 1
 
 Centralized storage for media files used in messages, chatbot knowledge, and templates.
 
+File permissions are action-specific. Uploading, creating folders, renaming, moving, and deleting each require the corresponding access; read-only users can browse only what their role permits.
+
 ## Where to Find It
 
 Sidebar → **GENERAL → File Manager** — `https://app.wabot.io/dashboard/file-manager`
@@ -37,11 +39,28 @@ Check your current usage on the **Dashboard → Storage** card.
 
 ## Managing Files
 
-1. Click **Upload** to add new files.
-2. Browse by folder (if configured) or filter by type.
-3. Click a file to preview or copy its URL.
-4. Use file URLs in message templates, broadcasts, and automations.
-5. Delete unused files to free up space.
+### Upload and Organize Files
+
+1. Open **GENERAL → File Manager**.
+2. Open the target folder, or click **New Folder** and give it a clear name.
+3. Click **Upload** and select one or more files.
+4. Wait for each upload to finish before using it in a message.
+5. Use the **Type** filter or search to find files later.
+6. Open a file to preview it, copy its URL, download it, move it, or manage its details.
+
+### Use Files in Wabot
+
+1. Upload the file before opening the message editor.
+2. In a chatbot, broadcast, automation, template, or Live Chat conversation, choose the media or attachment control.
+3. Select the existing file or paste its file URL where the feature supports a URL.
+4. Preview the message and send a controlled test before using it in a campaign.
+
+### Keep Storage Healthy
+
+1. Review the storage usage card on the Dashboard.
+2. Keep campaign assets in named folders, for example `Campaigns/Raya-2026` or `Products/Skincare`.
+3. Delete duplicate, expired, or unused files after confirming that no active automation, chatbot, template, or broadcast depends on them.
+4. Retain the original source file outside Wabot when it is business-critical.
 
 ## Best Practices
 

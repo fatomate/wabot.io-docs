@@ -19,10 +19,12 @@ You scan a QR code within the Wabot system, just like WhatsApp Web. Once scanned
 
 No. Wabot is an independent platform built by **Team Fames Sdn Bhd** (Malaysia). It is **not** in partnership with, sponsored by, or endorsed by WhatsApp Inc.
 
-Wabot supports two connection methods:
+Wabot currently supports two live account connection methods:
 
 1. **Unofficial API** — QR scan (like WhatsApp Web)
 2. **Official API** — the official Meta WhatsApp Business API, for enterprises
+
+The Add Account page also shows **WebChat** as a planned web-only account type, but it is currently disabled and marked **Coming soon**. You can still deploy a web widget from the chatbot settings of a connected WhatsApp account.
 
 ### Does my phone need to be ON and connected to the internet?
 
@@ -134,7 +136,7 @@ Your account data is retained for 30 days after cancellation in case you want to
 ### How do I contact support?
 
 - **WhatsApp:** [+60 12-515 3307](https://wa.me/60125153307)
-- **Help Portal:** Click the **Help** link in the Support section of the sidebar
+- **Help:** The current sidebar Help destination returns a 404 page. Use your team's established Wabot support channel instead.
 - **Email:** Contact via wabot.io website
 
 ### Is there a community or forum?

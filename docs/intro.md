@@ -27,7 +27,7 @@ _Panduan lengkap untuk Wabot.io — platform automasi WhatsApp serba lengkap._
 - **[Notifications](/docs/features/broadcast)** — Send order confirmations, shipping updates, and payment reminders automatically.
 - **[Broadcast](/docs/features/broadcast)** — Run marketing campaigns to thousands of contacts with scheduling and targeting.
 - **[AI Chatbots](/docs/features/chatbots)** — Deploy AI that answers FAQs, qualifies leads, and closes sales 24/7.
-- **[Automation](/docs/features/automation)** — Build visual drag-and-drop flows triggered by webhooks or WhatsApp labels.
+- **[Automation](/docs/features/automation)** — Currently **Coming Soon** in V4. Continue existing workflows in V3.
 - **[Live Chat](/docs/features/live-chat)** — Shared team inbox for WhatsApp with AI-to-human handoff.
 - **[Autoresponder](/docs/features/autoresponder)** — Keyword-based auto-replies for greetings, FAQs, and quick support.
 

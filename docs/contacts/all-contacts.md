@@ -5,56 +5,58 @@ sidebar_position: 2
 
 # Contacts
 
-Contacts is the central directory of every person who has interacted with your Wabot-connected WhatsApp numbers.
+People is the central directory of CRM contacts and chatbot subscribers from your Wabot-connected WhatsApp accounts.
 
 ## Where to Find It
 
-Sidebar → **GENERAL → Contacts** — `https://app.wabot.io/dashboard/contacts`
+Sidebar → **GENERAL → Audience Hub → People** — `https://app.wabot.io/dashboard/contacts/people`
 
 ![Contacts Page](/img/screenshots/contacts.png)
 
-## Tabs
+## Views
 
-The page has three tabs:
+Use the People page to switch between the available contact and subscriber views:
 
-| Tab | Description |
+| View | Description |
 |-----|-------------|
-| **All Contacts** | Every contact across all accounts |
-| **Labels** | Contacts organized by WhatsApp labels |
-| **Groups** | Contacts organized by audience groups |
+| **Contacts** | CRM people and their profile data |
+| **Subscribers** | People who have interacted with your chatbot or other subscriber entry points |
 
 ## Filters
 
-- **Select Instance** — filter by a specific WhatsApp account
-- **All Time** — date range filter
+- **Select Account** — filter by a specific WhatsApp account
+- **Search** — find a person by name or phone number
+- **Advanced filters** — narrow by chatbot status, follow-up state, activity, source, labels, or date
+- **Columns and view mode** — adjust the details shown for your workflow
 
-## Adding Contacts
+## Working with a Person
 
-Two methods:
-
-- **Add Contact** — manually enter name, phone, email, custom fields
-- **Import from Google** — sync from your Google account (requires Google OAuth setup in Integrations)
-
----
-
-## Contact Details
-
-Click any contact to see:
+1. Open **Audience Hub → People** and choose the account and view.
+2. Search or filter for the person.
+3. Click the row or card to open the profile.
+4. Review or update:
 
 - **Name & phone number**
 - **Labels** applied
-- **Groups** they belong to
 - **Conversation history**
 - **Custom fields** (email, company, notes)
 - **Last interaction** date
 
-You can edit contact info, add/remove labels, and move between groups from this view.
+5. Save any permitted changes. Use the page's bulk actions only after confirming the selected people.
+
+## Add, Import, Export, and Remove Contacts
+
+1. Select the account first, because contacts belong to a specific WhatsApp account.
+2. Use **Add Contact** to create one contact. Enter a name when available and a phone number in international format.
+3. Use **Import** to add a prepared CSV file. Test the import with a small file before importing a large database.
+4. Use **Export** after applying the required account, search, and date filters.
+5. Use delete actions cautiously. Removing a CRM contact does not necessarily undo messages, labels, subscriber history, or external system records.
 
 ---
 
 ## Labels
 
-Labels are WhatsApp-native tags (like "new lead", "VIP", "paid"). They sync from your WhatsApp account and can be used to:
+Labels are WhatsApp-native tags (like "new lead", "VIP", "paid"). Open **Audience Hub → Labels** to select an account and label, then search, filter, refresh, or export the associated people. Labels can be used to:
 
 - Filter contacts
 - Trigger automations (label-based triggers)
@@ -62,4 +64,4 @@ Labels are WhatsApp-native tags (like "new lead", "VIP", "paid"). They sync from
 
 ---
 
-**See also:** [Audience & Groups](/docs/contacts/audience) · [Live Chat](/docs/features/live-chat)
+**See also:** [Audience Hub](/docs/contacts/audience) · [Live Chat](/docs/features/live-chat)

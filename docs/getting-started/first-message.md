@@ -1,6 +1,6 @@
 ---
 title: Send Your First Message
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # Send Your First Message
@@ -24,10 +24,10 @@ Now that your WhatsApp account is connected, let's send a test message to make s
 - **Choose Your Accounts:** Pick **Unofficial API** or **Official API**
 - **Select Accounts:** Pick the connected account
 - **Select Your Audience:**
-  - **Contact Groups** → select a group, or
+  - **Contact Groups** → select a Broadcast List, or
   - **Segmented Subscriber** → filter by behavior/profile
-- **Include Groups:** Choose a test group (create one with just your own number)
-- **Exclude Groups (Optional):** Leave empty
+- **Include Lists / Groups:** Choose a test audience containing only your own number.
+- **Exclude Lists / Groups (Optional):** Leave empty.
 
 ### Step 2 — Create Message
 - Write your message text.
@@ -49,21 +49,13 @@ Now that your WhatsApp account is connected, let's send a test message to make s
 
 If you want to trigger messages from your own code or webhook:
 
-```bash
-curl -X POST https://app.wabot.io/api/send \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "phone": "60123456789",
-    "message": "Hello from Wabot API!"
-  }'
-```
+1. Open **CORE → REST API**.
+2. Select the connected account that will send the message.
+3. Choose **Send Text** and copy the generated cURL sample.
+4. Replace only the example recipient and message with your controlled test values.
+5. Run the request from a secure server-side environment.
 
-:::note
-Find your API key and exact endpoint URL in **Settings → API** after logging in.
-:::
-
-See [Integrations → Webhooks & API](/docs/integrations/webhooks) for the full reference.
+See [REST API & OAuth](/docs/tools/rest-api) for the full reference.
 
 ---
 

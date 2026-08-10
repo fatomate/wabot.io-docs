@@ -5,7 +5,9 @@ sidebar_position: 5
 
 # Autoresponder
 
-Autoresponder sends automatic replies based on keywords your customers type. Perfect for handling greetings, FAQs, pricing inquiries, and common questions without using AI credits.
+Autoresponder configures a default automatic reply for each WhatsApp account. It supports reply targeting, text or media, Normal or AI Reply mode, exclusions, and optional lead-management actions.
+
+Website accounts are not selectable for Autoresponder. Creating or updating a reply requires Autoresponder write permission.
 
 ## Where to Find It
 
@@ -13,160 +15,94 @@ Sidebar → **CORE → Autoresponder** — `https://app.wabot.io/dashboard/autor
 
 ![Autoresponder Page](/img/screenshots/autoresponder.png)
 
-## Prerequisites
+## Configure an Account
 
-You need at least one connected WhatsApp account. On a fresh account, you'll see: *"No WhatsApp accounts yet — Connect a WhatsApp account to configure autoresponder."*
+1. Open **Autoresponder** and find the relevant account.
+2. Click **Configure**.
+3. Choose **Enable** or **Disable**.
+4. Choose who can receive the reply:
+   - **All** — all eligible conversations.
+   - **Individual** — individual chats only.
+   - **Group** — group chats only.
+5. Choose **Text & Media**, then write the reply message.
+6. Add media from **File manager**, **Upload**, or **Add via URL** if required.
+7. Choose a reply mode:
+   - **Normal Mode** sends the saved reply.
+   - **AI Reply Mode** uses the account's AI configuration when available.
+8. Add numbers that must not receive the reply in **Excluded Phone Numbers**.
+9. Configure optional lead-management, forwarding, webhook, or contact-group settings for the workflow.
+10. Click **Save**.
 
-## Page Layout
+## Apply One Setup to Multiple Accounts
 
-At the top of the Autoresponder page:
+1. Return to the Autoresponder page.
+2. Click **Apply to All**.
+3. Review the configuration and target accounts.
+4. Apply it only when the same reply is suitable for every selected account.
+5. Open any exception account and configure it individually.
 
-- **All Accounts** dropdown — filter by connected account
-- **Apply to All** button — copy one set of rules across all accounts
+## Create a Keyword Autoresponder
 
-Below, you define keyword → reply rules.
+The **Default Reply** is account-level. Use a keyword autoresponder when the reply must depend on text the customer sends.
 
----
+1. Open **Autoresponder** and create a responder.
+2. Select a WhatsApp account, or choose **All accounts** when that option is appropriate.
+3. Enter an internal name and one or more keywords.
+4. Choose the match method:
+   - **Contains**
+   - **Exact match**
+   - **Regular expression**
+5. Compose the response text and optional media.
+6. Set a delay from 0 to 3,600 seconds.
+7. Save and test using a controlled conversation.
 
-## How Autoresponder Works
+Keyword responders can be edited or deleted from their own pages. Do not use a regular expression unless it has been tested carefully, because a broad pattern can trigger unexpected replies.
 
-1. A customer sends a message to your Wabot-connected number.
-2. Wabot scans the message for your configured keywords.
-3. If it matches, Wabot sends the pre-set reply automatically.
-4. If no keyword matches, the message is passed to the **Chatbot** (if enabled) or lands in **Live Chat**.
+## Common Default Replies
 
----
+### Greeting
 
-## Creating a Rule
-
-1. Click **Add Rule** (or **Create**).
-2. Fill in:
-   - **Keyword(s)** — comma-separated (e.g. `hi, hello, hai, helo`)
-   - **Match type:**
-     - **Exact** — entire message must equal the keyword
-     - **Contains** — message contains the keyword anywhere
-     - **Starts with** — message begins with the keyword
-   - **Case sensitivity** — on/off
-   - **Reply message** — the text to send back
-   - **Media attachment** (optional) — image, PDF, etc.
-   - **Next action** (optional):
-     - Add a label to the contact
-     - Add to a group
-     - Trigger an automation
-3. Save and enable the rule.
-
----
-
-## Common Use Cases
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs>
-<TabItem value="greeting" label="Greeting" default>
-
-**Keywords:** `hi, hello, hai, helo, assalamualaikum, waalaikumussalam`
-
-**Match type:** Contains
-
-**Reply:**
-```
+```text
 Hi! Selamat datang ke {store_name}.
-Saya boleh bantu anda dengan:
-1. Senarai produk — taip "produk"
-2. Harga & promosi — taip "harga"
-3. Lokasi & waktu — taip "lokasi"
-4. Cakap dengan admin — taip "admin"
+Saya boleh bantu anda dengan produk, harga, lokasi, atau sambungan kepada admin.
 ```
 
-</TabItem>
-<TabItem value="pricing" label="Pricing">
+### Pricing
 
-**Keywords:** `harga, price, berapa, cost, how much`
+Attach a current price-list PDF or image, then add a short explanation of how the customer can order.
 
-**Match type:** Contains
+### Office Hours
 
-**Reply:** Attach your price list PDF + a short intro message.
-
-</TabItem>
-<TabItem value="hours" label="Office Hours">
-
-**Keywords:** `waktu, jam, bila buka, opening, hours`
-
-**Reply:**
-```
+```text
 Waktu operasi kami:
 Isnin–Jumaat: 9 pagi – 6 petang
 Sabtu: 9 pagi – 1 petang
 Ahad: Tutup
-
-Untuk tempahan luar waktu, sila ketuk "tempahan".
 ```
 
-</TabItem>
-<TabItem value="thanks" label="Thank You">
+### Opt-out Confirmation
 
-**Keywords:** `terima kasih, thanks, thank you, tq`
-
-**Reply:**
-```
-Sama-sama! Jika ada sebarang soalan lain, sila beritahu kami. 😊
+```text
+Anda telah berhenti melanggan. Anda tidak akan menerima mesej promosi lagi. Terima kasih.
 ```
 
-</TabItem>
-<TabItem value="stop" label="Stop / Unsubscribe">
-
-**Keywords:** `stop, unsubscribe, berhenti, sudah`
-
-**Match type:** Exact
-
-**Reply:**
-```
-Anda telah berhenti melanggan. Anda tidak akan menerima mesej dari kami lagi. Terima kasih.
-```
-
-**Next action:** Add label `unsubscribed` + remove from all broadcast groups.
-
-</TabItem>
-</Tabs>
-
----
+Add the person to an `unsubscribed` label or Broadcast List exclusion after the conversation is handled.
 
 ## Autoresponder vs Chatbot
 
 | Feature | Autoresponder | Chatbot |
-|---------|---------------|---------|
-| **Logic** | Exact keyword match | AI understanding |
-| **Cost** | Free (no AI credits) | Uses AI credits |
-| **Best for** | Simple, repetitive queries | Complex, context-aware replies |
-| **Setup** | 2 minutes per rule | Upload docs, train persona |
-| **Fallback** | Silent or pass to Chatbot | Handover to human |
+| --- | --- | --- |
+| Logic | Saved default reply or AI Reply mode | AI conversation with persona and knowledge |
+| Cost | No AI credits in Normal Mode | Uses AI credits |
+| Best for | Greeting, availability, routing | Contextual support and sales |
+| Setup | Per-account default configuration | Persona, knowledge, tools, and testing |
 
-**Recommendation:** Use **Autoresponder for quick wins** (greeting, pricing, hours) and **Chatbot for deeper conversations** (product recommendations, objection handling, closing sales).
+## Test Before Enabling
 
----
-
-## Priority Order
-
-When a message arrives, Wabot processes it in this order:
-
-1. **Autoresponder** — if a keyword matches, reply and stop
-2. **Chatbot** — if enabled and no autoresponder triggered
-3. **Live Chat** — if neither of the above responds, lands in human inbox
-
-You can adjust this flow by disabling specific stages per account in **Settings**.
-
----
-
-## Best Practices
-
-- Start with 5–10 essential rules: greeting, pricing, location, hours, how to order, contact admin.
-- Use **Contains** match for natural conversation, **Exact** for critical commands like "stop".
-- Include a **menu** in your greeting reply so customers know what keywords to use.
-- Keep replies short (under 500 characters) — mobile users skim.
-- Test every rule by messaging your Wabot number from another phone.
-- Review **Live Chat** weekly and add new rules based on what customers ask.
-
----
+1. Configure one account first.
+2. Send a controlled test message from another phone.
+3. Confirm the reply text, media, audience targeting, AI mode, exclusions, and any forwarding behavior.
+4. Check the resulting conversation in **Live Chat**.
+5. Apply the configuration to other accounts only after the test is correct.
 
 **See also:** [Chatbots](./chatbots) · [Live Chat](./live-chat) · [Automation](./automation)

@@ -5,6 +5,8 @@ sidebar_position: 2
 
 # Chatbots
 
+Users with Chatbot read access but no write access can inspect configuration, but cannot change AI knowledge, memory, tools, or settings.
+
 Wabot Chatbots are AI-powered assistants that handle customer conversations on your WhatsApp number 24/7. They understand context, respond to text/images/voice, remember user details across sessions, and seamlessly hand off to a human when needed.
 
 ## Where to Find It
@@ -14,6 +16,24 @@ Sidebar → **CORE → Chatbots** — `https://app.wabot.io/dashboard/chatbots`
 ![Chatbots Page](/img/screenshots/chatbots.png)
 
 ---
+
+## Set Up Your First AI Chatbot
+
+Use this sequence for a safe first launch:
+
+1. Connect the WhatsApp account the chatbot will use.
+2. Go to **CORE → Chatbots** and select that account.
+3. Open **Configure Setting** and choose **AI** mode.
+4. Write the **AI Role Guide / Persona**: business name, supported languages, products or services, tone, rules, and when to hand over to a human.
+5. Enable the required AI features, such as knowledge, memory, voice transcription, or vision.
+6. Add and wait for processing of the knowledge files the bot should use.
+7. Configure human-transfer conditions and an escalation destination.
+8. Test the behavior in **AI Playground** with realistic customer questions.
+9. Publish or save the reviewed configuration, then monitor feedback gaps and Live Chat conversations after launch.
+
+:::tip
+Begin with a focused use case, such as product FAQ or lead qualification. Add new instructions and knowledge only after testing them. A smaller, clear persona is easier to validate than an unrestricted bot.
+:::
 
 ## Chatbot Instance (Summary Page)
 
@@ -39,13 +59,24 @@ At the top, you see a quick overview of the current chatbot configuration:
 
 ### Quick Actions
 
-Five buttons for fast access:
+The summary page provides fast access to:
 
 - **Configure Setting** — Full AI configuration panel
 - **AI Playground** — Test chatbot in a sandbox
 - **Widget Setting** — Embeddable web chat widget
-- **Follow-Up Center** — Monitor scheduled follow-ups
 - **Versions** — Chatbot version history
+
+Follow-ups are now managed from **Audience Hub → Follow-Up Center**. The legacy chatbot-instance follow-up route redirects there.
+
+### Start or Stop a Chatbot Account
+
+From the main **Chatbots** list:
+
+1. Find the account by name, phone number, or filter.
+2. Check its current **Run Chatbot** status.
+3. Use the status control to start or stop chatbot processing for that account.
+4. Open **Manage** to change its rules, AI configuration, tools, knowledge, and versions.
+5. Test the new behavior in AI Playground before enabling it for customer conversations.
 
 ### Chatbots & Tools
 
@@ -74,6 +105,10 @@ Click **New Chatbot** to create a new rule.
 
 Custom tools that the AI chatbot can invoke during conversations. Tool types include:
 
+Availability varies by tool type, plan, and permission. A tool can be premium-locked, marked **Coming Soon**, or show **Feature Under Development**; do not configure a workflow around it until its form is available for the selected account.
+
+For example, the Calendar tool is marked **Coming Soon** until Google Calendar access is enabled for the workspace.
+
 | Tool Type | Description |
 |-----------|-------------|
 | **Website Fetch** | Fetch live data from a URL (e.g. class schedules) |
@@ -94,6 +129,15 @@ Manage training documents and user memories:
 - **Memory** tab — View stored user memories across conversations.
 - **Add Knowledge** — Upload new documents.
 - **Dashboard** — Knowledge analytics overview.
+
+### Version History
+
+Use **Versions** before making a major prompt, model, or knowledge change:
+
+1. Open **Versions** from the chatbot summary.
+2. Record what you are changing and why.
+3. Compare the available saved configurations.
+4. Restore a known-good version when a new configuration produces poor results.
 
 ### AI Feedback
 
@@ -242,6 +286,23 @@ Embed a chat widget on your website that connects to your Wabot chatbot.
 
 ![Widget Settings](/img/screenshots/chatbot-widget-settings.png)
 
+### Deploy the Widget
+
+After configuring the widget, click **Deploy** in **Widget Setting**. Wabot provides four deployment options:
+
+| Option | Use it for |
+|--------|------------|
+| **Add to Website** | Copy an embed script and paste it into your website HTML before the closing `</body>` tag. |
+| **Open URL** | Share a direct hosted WebChat link without editing your website code. |
+| **Popup Link** | Open the WebChat as a modal popup from your own button or link. |
+| **Customize URL** | Edit the public widget URL slug before sharing or embedding it. |
+
+For a normal website widget, use **Deploy → Add to Website** and paste the script before `</body>`:
+
+```html
+<script src="https://app.wabot.io/api/widget/{instanceId}/embed" async></script>
+```
+
 <Tabs>
 <TabItem value="general" label="General" default>
 
@@ -282,7 +343,7 @@ Domain whitelisting and access controls.
 
 Monitor and manage AI-generated follow-up messages.
 
-![Follow-Up Center](/img/screenshots/chatbot-followup.png)
+Open **Audience Hub → Follow-Up Center** (`/dashboard/contacts/follow-ups`). Choose an account, then use the search, type, status, and date filters to find the relevant record.
 
 <Tabs>
 <TabItem value="messages" label="Follow-up Messages" default>

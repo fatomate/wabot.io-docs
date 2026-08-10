@@ -15,10 +15,14 @@ Sidebar → **CORE → Link Generator** — `https://app.wabot.io/dashboard/link
 
 ## How It Works
 
-1. **Select WhatsApp Account** — pick the number the link should open to.
-2. **Pre-filled Message** — the text that will auto-populate when the customer clicks the link.
-3. **Style Options** — customize the QR code appearance.
-4. **Custom QR** — generate a branded QR code (logo, colors).
+1. Open **CORE → Link Generator**.
+2. **Select WhatsApp Account** — pick the number the link should open to.
+3. Enter the **Pre-filled Message** customers should see when WhatsApp opens.
+4. Check the generated click-to-chat URL.
+5. Open **Style Options** to customize the QR code appearance.
+6. Generate and download the QR code, then test it on a phone before publishing it.
+
+If you see **Access Restricted**, ask the team owner to check your plan and Link Generator permission.
 
 ## Generated Outputs
 

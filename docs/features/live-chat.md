@@ -5,6 +5,8 @@ sidebar_position: 6
 
 # Live Chat
 
+Sending messages requires the appropriate conversation permission. Other contact actions, such as notes, scheduling, labels, groups, and contact edits, can be restricted independently.
+
 Live Chat is Wabot's shared team inbox — a unified view of every WhatsApp conversation across all your connected accounts. Multiple agents can reply, take over from the AI, tag chats, and use canned responses.
 
 ## Where to Find It
@@ -33,12 +35,9 @@ At the top of the conversation list, you can filter by:
 |--------|---------------|
 | **All** | Every conversation across all accounts |
 | **Unread** | New messages you haven't seen |
-| **Widget** | Conversations from WebChat widgets |
-| **Chatbot Active** | Threads where the AI is currently responding |
-| **Chatbot Inactive** | Threads that have been handed over to humans or never had bot active |
 | **Archived** | Old conversations you've archived |
 
-Use these to triage — check **Unread** first thing in the morning, then **Chatbot Inactive** for threads needing human attention.
+Use **Filters** to additionally narrow the inbox by conversation status, account, source, website, or priority. Use **Reset** to clear active filters.
 
 ---
 
@@ -52,6 +51,14 @@ Use these to triage — check **Unread** first thing in the morning, then **Chat
 
 The message goes out via the connected WhatsApp account — the customer sees it come from your business number, not from "Wabot".
 
+## Work the Inbox Efficiently
+
+1. Start with **Unread** and assign or prioritise conversations that need a human response.
+2. Use search and filters to locate a contact, account, label, group, widget conversation, or AI state.
+3. Open the conversation and check the contact information panel before replying.
+4. Check the Official API 24-hour customer-service window when it applies. Use an approved template when a normal free-form reply is not permitted.
+5. Use **Archive** only after the outcome is recorded. A new customer reply can return the conversation to active work.
+
 ---
 
 ## Key Actions per Conversation
@@ -64,10 +71,10 @@ import TabItem from '@theme/TabItem';
 
 If a chatbot is handling the thread and you want to step in:
 
-1. Click **Take Over** (or **Disable Bot**).
+1. Use the chatbot control to temporarily disable the chatbot for the conversation.
 2. The AI stops responding for this thread.
 3. Reply manually.
-4. When done, click **Hand Back to Bot** to re-enable AI.
+4. Re-enable the chatbot when the conversation should return to AI handling.
 
 </TabItem>
 <TabItem value="assign" label="Assign to Teammate">
@@ -101,7 +108,7 @@ Insert pre-saved canned responses:
 
 Close a conversation when the customer's issue is solved:
 
-1. Click **Mark as Resolved** (or **Close**).
+1. Archive the conversation.
 2. The thread moves to the Archived filter.
 3. Re-opens automatically if the customer replies again.
 
@@ -118,6 +125,21 @@ Internal notes only your team sees (not sent to the customer):
 </Tabs>
 
 ---
+
+## Schedule a Reply or Add an Internal Message
+
+When the conversation controls are available:
+
+1. Open the selected conversation.
+2. Choose the schedule control to prepare a reply for a future time, then verify the recipient, message, timezone, and schedule.
+3. Use the internal-message control for notes that should be visible to your team but never sent to the customer.
+4. Review scheduled and queued work in **Queue Message** or the conversation panel before changing a campaign or account status.
+
+## Message Delivery and Attachments
+
+- Attach images, video, documents, or audio from your device or File Manager.
+- Watch message status indicators to distinguish pending, sent, delivered, read, and failed messages.
+- If a message fails, check the account connection, recipient format, permitted message type, and [Account Error Logs](/docs/tools/account-error-logs) before resending.
 
 ## The Right Sidebar — Contact Info
 

@@ -20,7 +20,7 @@ Wabot.io is an all-in-one WhatsApp automation platform that lets you:
 - Manage conversations from a shared team inbox
 - Set up keyword-based autoresponders
 
-It connects to your WhatsApp via a **QR code scan** (like WhatsApp Web), via the **Official WhatsApp Business API** (WABA) for larger businesses, or as a **WebChat widget** for website-only AI chatbots.
+It connects to your WhatsApp via a **QR code scan** (like WhatsApp Web) or the **Official WhatsApp Business API** (WABA) for larger businesses. You can also deploy a web widget from a connected account's chatbot settings.
 
 ---
 
@@ -41,9 +41,9 @@ flowchart LR
 
 ---
 
-## The Three Account Types
+## Connection Methods
 
-When you **Add Account** in Wabot, you pick one of three integration methods:
+When you **Add Account** in Wabot, you can currently choose one of two working integration methods:
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -71,14 +71,11 @@ import TabItem from '@theme/TabItem';
 - Requires pre-approved message templates
 
 </TabItem>
-<TabItem value="webchat" label="WebChat">
+<TabItem value="webchat" label="WebChat (Coming soon)">
 
-**Best for:** Website-only AI chatbots and widgets.
+The Add Account page displays a WebChat card for website-only AI chatbots and widgets, but it is currently disabled and marked **Coming soon**.
 
-- No WhatsApp connection required
-- AI Chatbot + widget + playground
-- Instant activation
-- Web-only conversations
+To use a web widget today, first connect an Unofficial or Official API account. Then open **Chatbots → [account] → Widget Setting** to configure and deploy it.
 
 </TabItem>
 </Tabs>

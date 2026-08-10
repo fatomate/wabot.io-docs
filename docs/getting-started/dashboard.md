@@ -9,25 +9,22 @@ Once you log in, you land on the **Dashboard** at `https://app.wabot.io/dashboar
 
 ![Dashboard Overview](/img/screenshots/dashboard.png)
 
-## Top Banner
+## Dashboard Overview
 
-The welcome banner shows:
+The dashboard combines account and activity information:
 
-- Greeting with your name
-- Quick action buttons: **Add Account** and **Take Tour**
+- Your current plan and a **Manage subscription** action
+- An AI credits indicator with a **Buy Credits** action
+- Message Activity, Subscriber Growth, and Subscriber Breakdown charts
+- Connected WhatsApp account cards and a **View all** link
+- Recent Activity and a link to the full activity view
+- **Full Analytics** for a broader account summary
 
-## Current Package Card
-
-Shows your active plan and billing cycle:
-
-- **Plan name** (Lite / Basic / Plus / Premier / Platinum)
-- **Status** (Active / Expired)
-- **Days remaining** in your billing cycle
-- **Manage Subscription** button
+Use the figures to identify changes in delivery, replies, subscriber growth, or chatbot activity before changing a campaign or bot configuration.
 
 ## Usage & Credits
 
-Three cards monitor your monthly quotas:
+The header and dashboard cards monitor your operational quotas:
 
 ### Monthly Messages
 - Shows how many messages used vs your plan's total (e.g. `1 / 10.0M`)
@@ -42,14 +39,13 @@ Three cards monitor your monthly quotas:
 
 ### Storage
 - Space used for media files and AI Knowledge
-- Shows used / total and remaining
-- **Manage Files** button linking to the File Manager
+- View and manage files from **File Manager**
 
 ---
 
 ## Sidebar Navigation
 
-The left sidebar is organized into five groups:
+The left sidebar is organized into GENERAL, CORE, and SUPPORT groups. Items are shown according to your plan and team permissions.
 
 ### GENERAL
 
@@ -57,8 +53,7 @@ The left sidebar is organized into five groups:
 |------|--------------|
 | **Dashboard** | The main overview page |
 | **Accounts** | Manage WhatsApp accounts (connect new numbers) |
-| **Audience** | Contact groups & subscribers |
-| **Contacts** | All contacts, labels, groups |
+| **Audience Hub** | People, Follow-Up Center, analytics, broadcast lists, labels, and WhatsApp groups |
 | **Templates** | Pre-approved, lists, buttons, polls, sequences, quick replies |
 | **File Manager** | Media files and AI knowledge storage |
 | **Integrations** | Google Sheets, WordPress, Pabbly, Make, Funnelkit, etc. |
@@ -70,18 +65,20 @@ The left sidebar is organized into five groups:
 |------|--------------|
 | **Chatbots** | AI-powered chatbot builder |
 | **Broadcast** | Bulk campaigns to lists |
-| **Automation** | Visual workflow builder (webhook / label triggers) |
+| **Automation** | Coming Soon in V4. Continue existing automation workflows in V3. |
 | **Autoresponder** | Keyword-based auto-replies |
 | **Queue Message** | Monitor queued/scheduled messages |
-| **Tools** | Quick utilities |
-| **Link Generator** | Create click-to-chat links and QR codes |
+| **Link Generator** | Create click-to-chat links and QR codes, when your plan and permission allow access. |
+| **REST API** | API console, access token, and account-specific samples |
+| **Tools** | Sidebar destination currently returns 404. Use Caption and OAuth & MCP from their direct Settings/REST API routes. |
 
 ### SUPPORT
 
 | Item | What it does |
 |------|--------------|
 | **Settings** | Account & notification settings |
-| **Help** | Opens the support portal |
+| **Account Error Logs** | Owner-only view of account-facing failures and safe technical details |
+| **Help** | Sidebar destination currently returns 404. |
 
 ### ADMIN _(for team owners)_
 
@@ -97,25 +94,23 @@ The left sidebar is organized into five groups:
 
 ---
 
-## Getting Started Wizard
+## Suggested First Setup
 
-Below the usage cards, you'll see a **Getting Started** card with 7 numbered steps:
+For a new team, use this order:
 
-1. **Connect Account** — Link your WhatsApp number
-2. **Setup Chatbot** — Create AI-powered chatbot
-3. **Live Chat** — Enable live chat and manage conversations
-4. **Create Audience** — Build contact groups
-5. **Blasting Broadcast** — Send bulk campaigns
-6. **Autoresponder** — Set up keyword auto-replies
-7. **Create Automation** — Build automated workflows
-
-Click any step to jump directly to that feature.
+1. **Accounts** — connect and verify a WhatsApp account.
+2. **Audience Hub** — create a small test Broadcast List and add a controlled test number.
+3. **Templates** and **File Manager** — prepare reusable copy and media.
+4. **Chatbots** or **Autoresponder** — configure the first automatic response.
+5. **Live Chat** — confirm the team can respond to test conversations.
+6. **Broadcast** — send a small opt-in test campaign.
+7. **Integrations** — add external workflows only after the basic message flow works. Use existing V3 Automation only where applicable.
 
 ---
 
 ## Top Right Header
 
-- **Search** (⌘+F)
+- **Search** (⌘+K)
 - **Notifications**
 - **Toggle theme** (light/dark)
 - **Profile menu** — shows your name and current plan

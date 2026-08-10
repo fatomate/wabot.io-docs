@@ -5,13 +5,26 @@ sidebar_position: 4
 
 # Automation
 
-Automation lets you build no-code workflows that run when a webhook is called or when a label changes on WhatsApp. It's Wabot's most powerful feature for chaining actions together.
+:::warning Current V4 availability
+The V4 **Automation** page is currently marked **Coming Soon**. You cannot create or manage V4 automations from this page yet.
+
+Continue operating existing automations in **V3** until the V4 automation engine is released. The V4 page previews planned webhook triggers, label triggers, scheduled follow-ups, response logs, and workflow actions, but those controls are not currently available for configuration.
+:::
+
+The remainder of this page describes the planned/legacy automation model. Do not treat its setup steps as an available V4 workflow until Wabot removes the Coming Soon state.
 
 ## Where to Find It
 
 Sidebar → **CORE → Automation** — `https://app.wabot.io/dashboard/automation`
 
 ![Automation Dashboard](/img/screenshots/automation.png)
+
+## Before You Build an Automation
+
+1. Connect the WhatsApp account that will own the workflow.
+2. Create any labels, templates, Broadcast Lists, Google Sheets connection, or webhook endpoint that the flow will use.
+3. Decide whether the same person may trigger the flow more than once.
+4. Write down a controlled test case before enabling the automation.
 
 ## The Automation Dashboard
 
@@ -37,7 +50,7 @@ The table columns:
 
 ## Creating an Automation
 
-Click **Create** at the top right to go to `/dashboard/automation/new`. The form has three sections:
+Click **Create Automation** to go to `/dashboard/automation/new`. The setup form has three sections:
 
 ![Create Automation Form](/img/screenshots/automation-new.png)
 
@@ -45,7 +58,7 @@ Click **Create** at the top right to go to `/dashboard/automation/new`. The form
 
 - **Automation Name \*** — e.g. "Welcome New Lead"
 - **Description** — internal notes
-- **Account Type:**
+- **Account Type**:
   - **Unofficial API**
   - **Official API**
 - **WhatsApp Account \*** — pick from the dropdown
@@ -86,7 +99,7 @@ import TabItem from '@theme/TabItem';
   - **Skip action with errors** (continue to next action)
   - **Stop automation on error**
 
-Click **Create & Add Actions** — you'll be taken to the flow builder to add actions.
+For a label trigger, select the label and either **Label Added** or **Label Removed**. Click **Create & Add Actions** to open the flow builder.
 
 ---
 
@@ -106,8 +119,25 @@ After creation, you build the flow by adding actions one by one. Common action t
 | **Call Webhook** | HTTP POST to an external URL |
 | **Condition (If/Else)** | Branch based on contact data |
 | **End Flow** | Terminate the automation early |
+| **Schedule Follow-Up** | Create a later follow-up for the person |
+| **Cancel Follow-Up** | Cancel pending follow-ups for the person |
+| **Send Official Template** | Send an approved Official API template |
 
 Arrange actions in sequence. Each action passes context (contact info, trigger payload) to the next.
+
+### Configure and Test the Flow
+
+1. Add the first action after the trigger.
+2. Fill its fields and insert variables from the trigger payload or contact data.
+3. Add delays, conditions, and follow-up actions in their intended order.
+4. Save the flow.
+5. Trigger it with your own test contact or a test webhook payload.
+6. Open the automation's **Logs** and **Follow-ups** areas to confirm every step completed as expected.
+7. Enable the automation only after the test outcome is correct.
+
+:::tip
+The trigger type is fixed after creation. If you need to change from a webhook trigger to a label trigger, clone or create a new automation rather than assuming the existing trigger can be changed.
+:::
 
 ---
 
@@ -177,14 +207,29 @@ All fields become available as placeholders in your Send Message actions: `{name
 
 ## Monitoring Runs
 
-Click an automation to see:
+Click an automation to see the **Settings**, **Actions**, **Logs**, and **Follow-ups** tabs:
 
-- **Run history** — every execution with timestamp, contact, status
-- **Errors** — failed runs and why
-- **Scheduled** — upcoming delayed actions
-- **Live feed** — see actions happen in real time
+- **Logs** — executions, errors, filters, and journey view
+- **Follow-ups** — scheduled work created by the automation
+- **Retry** or **Retry Failed** — available for failed log entries after you correct the cause
+- **Live Preview** and **Preview Message** — review the configuration before enabling it
 
 Use this to debug flows and ensure nothing fires silently.
+
+:::warning
+An automation cannot be enabled without a connected WhatsApp account. Website accounts are not supported for automation creation, updates, or enabling.
+:::
+
+## Maintain an Automation
+
+From the automation list, you can search and filter by status or trigger. Use the row actions to:
+
+- **Enable / Disable** an automation without deleting its setup.
+- **Edit** its settings and actions.
+- **Clone** a working flow before adapting it to a new campaign.
+- **Delete** obsolete flows after checking their pending logs and follow-ups.
+
+Use a unique, descriptive name and keep a disabled test version of important production workflows.
 
 ---
 

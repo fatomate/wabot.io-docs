@@ -9,7 +9,7 @@ Connect Wabot with Google Spreadsheets to log contacts, orders, and conversation
 
 ## Setup
 
-1. Go to **Integrations → Google OAuth** and connect your Google account.
+1. Google OAuth is currently **Coming Soon**. Do not begin this connection flow until the card becomes available.
 2. Once connected, the **Google Spreadsheets** card will show **Connected**.
 3. Click **Settings** on the Google Spreadsheets card.
 
@@ -22,7 +22,7 @@ Connect Wabot with Google Spreadsheets to log contacts, orders, and conversation
 
 ## Using in Automations
 
-When building an Automation, add an **Update Google Sheet** action:
+V4 Automation is currently Coming Soon. For an existing V3 Automation, add an **Update Google Sheet** action:
 
 1. Select the connected Google account.
 2. Pick the spreadsheet and sheet tab.

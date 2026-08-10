@@ -10,11 +10,11 @@ Send WhatsApp notifications from your WordPress site — order alerts, form subm
 ## Setup
 
 1. In Wabot, go to **Integrations → WordPress Plugin**.
-2. Note your **API Key** (or generate one from Settings → API).
+2. Open **CORE → REST API**, select the account that WordPress will use, and copy the required server-side credentials or endpoint sample.
 3. In your WordPress admin:
    - Download and install the **Wabot for WordPress** plugin.
    - Go to **Settings → Wabot**.
-   - Paste your API key.
+   - Paste the required credentials in the plugin's secure server-side settings.
    - Select which events trigger WhatsApp messages:
      - WooCommerce: new order, processing, completed, refunded
      - Forms: Formidable Forms, Fluent Forms submissions
