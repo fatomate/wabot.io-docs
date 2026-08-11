@@ -2,7 +2,11 @@ import {mkdir, readFile, readdir, rm, writeFile} from 'node:fs/promises';
 import {join, relative, sep} from 'node:path';
 
 const root = process.cwd();
-const siteUrl = (process.env.DOCS_URL ?? 'https://fatomate.github.io/wabot.io-docs').replace(/\/$/, '');
+const defaultSiteUrl =
+  process.env.CF_PAGES === '1'
+    ? 'https://docs.wabot.io'
+    : 'https://fatomate.github.io/wabot.io-docs';
+const siteUrl = (process.env.DOCS_URL ?? defaultSiteUrl).replace(/\/$/, '');
 const sources = [
   {locale: 'en', directory: join(root, 'docs')},
   {locale: 'ms', directory: join(root, 'i18n', 'ms', 'docusaurus-plugin-content-docs', 'current')},
