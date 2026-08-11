@@ -6,9 +6,9 @@ const config: Config = {
   title: 'Wabot.io Documentation',
   tagline: 'The complete guide to Wabot.io — the all-in-one WhatsApp automation platform.',
   favicon: 'img/favicon.svg',
-  url: 'https://dinfames.github.io',
-  baseUrl: '/wabot.io-docs/',
-  organizationName: 'dinfames',
+  url: 'https://docs.wabot.io',
+  baseUrl: '/',
+  organizationName: 'fatomate',
   projectName: 'wabot.io-docs',
   trailingSlash: false,
   onBrokenLinks: 'throw',
@@ -29,7 +29,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/dinfames/wabot.io-docs/edit/main/',
+          editUrl: 'https://github.com/fatomate/wabot.io-docs/edit/main/',
           routeBasePath: 'docs',
         },
         blog: false,
@@ -60,7 +60,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/dinfames/wabot.io-docs',
+          href: 'https://github.com/fatomate/wabot.io-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -101,7 +101,7 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            { label: 'GitHub', href: 'https://github.com/dinfames/wabot.io-docs' },
+            { label: 'GitHub', href: 'https://github.com/fatomate/wabot.io-docs' },
           ],
         },
       ],
