@@ -2,12 +2,14 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const isCloudflarePages = process.env.CF_PAGES === '1';
+
 const config: Config = {
   title: 'Wabot.io Documentation',
   tagline: 'The complete guide to Wabot.io — the all-in-one WhatsApp automation platform.',
   favicon: 'img/favicon.svg',
-  url: 'https://fatomate.github.io',
-  baseUrl: '/wabot.io-docs/',
+  url: isCloudflarePages ? 'https://docs.wabot.io' : 'https://fatomate.github.io',
+  baseUrl: isCloudflarePages ? '/' : '/wabot.io-docs/',
   organizationName: 'fatomate',
   projectName: 'wabot.io-docs',
   trailingSlash: false,
