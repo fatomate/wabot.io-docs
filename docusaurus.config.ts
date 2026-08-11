@@ -42,6 +42,26 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        docsRouteBasePath: 'docs',
+        docsDir: ['docs', 'i18n/ms/docusaurus-plugin-content-docs/current'],
+        language: 'en',
+        hashed: 'filename',
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 10,
+        explicitSearchResultPath: true,
+        searchBarShortcutKeymap: 'mod+k',
+        searchBarPosition: 'right',
+      },
+    ],
+  ],
+
   themeConfig: {
     image: 'img/social-card.png',
     navbar: {
