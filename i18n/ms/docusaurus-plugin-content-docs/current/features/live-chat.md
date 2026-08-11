@@ -1,9 +1,9 @@
 ---
-title: Sembang Langsung
+title: Chat Live
 sidebar_position: 6
 ---
 
-# Sembang Langsung
+# Chat Live
 
 **Live Chat** ialah inbox pasukan untuk perbualan WhatsApp.
 

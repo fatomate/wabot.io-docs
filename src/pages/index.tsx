@@ -31,11 +31,11 @@ const homepageCopy = {
     learnMore: 'Ketahui lebih lanjut →',
     features: [
       {title: 'Notifikasi', desc: 'Hantar pengesahan pesanan, kemas kini penghantaran dan peringatan bayaran secara automatik.', link: '/docs/features/broadcast'},
-      {title: 'Siaran', desc: 'Jalankan kempen pemasaran kepada ribuan kenalan dengan penjadualan dan sasaran.', link: '/docs/features/broadcast'},
+      {title: 'WhatsApp Blast', desc: 'Jalankan kempen pemasaran kepada ribuan kenalan dengan penjadualan dan sasaran.', link: '/docs/features/broadcast'},
       {title: 'Chatbot AI', desc: 'Gunakan AI untuk menjawab FAQ, melayakkan prospek dan menutup jualan 24/7.', link: '/docs/features/chatbots'},
       {title: 'Automasi', desc: 'Kini Coming Soon dalam V4. Teruskan aliran kerja automasi sedia ada dalam V3.', link: '/docs/features/automation'},
-      {title: 'Sembang Langsung', desc: 'Inbox pasukan WhatsApp bersama dengan serahan AI kepada manusia.', link: '/docs/features/live-chat'},
-      {title: 'Balasan Automatik', desc: 'Balasan automatik berasaskan kata kunci untuk salam, FAQ dan sokongan pantas.', link: '/docs/features/autoresponder'},
+      {title: 'Chat Live', desc: 'Inbox pasukan WhatsApp bersama dengan serahan AI kepada manusia.', link: '/docs/features/live-chat'},
+      {title: 'Auto Reply', desc: 'Auto Reply berasaskan kata kunci untuk salam, FAQ dan sokongan pantas.', link: '/docs/features/autoresponder'},
     ],
   },
 };

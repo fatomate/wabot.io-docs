@@ -29,7 +29,7 @@ Ia menyambung ke WhatsApp anda melalui **imbasan kod QR** (seperti WhatsApp Web)
 1. Pencetus berlaku — pesanan baharu, penyerahan borang, siaran berjadual, kata kunci diterima.
 2. Wabot menerima acara melalui plugin, webhook, API, atau penjadualnya sendiri.
 3. Wabot menyusun dan menghantar mesej WhatsApp melalui nombor anda yang dipaut.
-4. Balasan masuk ke Sembang Langsung, chatbot AI, atau enjin automasi Wabot.
+4. Balasan masuk ke Chat Live, chatbot AI, atau enjin automasi Wabot.
 
 ---
 

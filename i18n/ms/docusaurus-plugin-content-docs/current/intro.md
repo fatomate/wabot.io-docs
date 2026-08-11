@@ -21,11 +21,11 @@ slug: /intro
 ## Apa Yang Boleh Dilakukan dengan Wabot
 
 - **[Notifikasi](/docs/features/broadcast)** — Hantar pengesahan pesanan, kemas kini penghantaran, dan peringatan pembayaran secara automatik.
-- **[Siaran](/docs/features/broadcast)** — Jalankan kempen pemasaran kepada ribuan kenalan dengan penjadualan dan penyasaran.
+- **[WhatsApp Blast](/docs/features/broadcast)** — Jalankan kempen pemasaran kepada ribuan kenalan dengan penjadualan dan penyasaran.
 - **[Chatbot AI](/docs/features/chatbots)** — Gunakan AI yang menjawab soalan, menapis prospek, dan menutup jualan 24/7.
 - **[Automasi](/docs/features/automation)** — Kini **Coming Soon** dalam V4. Teruskan aliran kerja automasi sedia ada dalam V3.
-- **[Sembang Langsung](/docs/features/live-chat)** — Inbox pasukan dikongsi untuk WhatsApp dengan penyerahan AI-ke-manusia.
-- **[Balasan Automatik](/docs/features/autoresponder)** — Balasan automatik berdasarkan kata kunci untuk salam, FAQ, dan sokongan pantas.
+- **[Chat Live](/docs/features/live-chat)** — Inbox pasukan dikongsi untuk WhatsApp dengan penyerahan AI-ke-manusia.
+- **[Auto Reply](/docs/features/autoresponder)** — Auto Reply berdasarkan kata kunci untuk salam, FAQ, dan sokongan pantas.
 
 ---
 

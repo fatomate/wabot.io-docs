@@ -1,9 +1,9 @@
 ---
-title: Balasan Automatik
+title: Auto Reply
 sidebar_position: 5
 ---
 
-# Balasan Automatik
+# Auto Reply
 
 Untuk balasan lalai mengikut akaun, buka **Autoresponder**, cari akaun dan klik **Configure**.
 

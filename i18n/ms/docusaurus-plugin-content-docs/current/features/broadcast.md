@@ -1,9 +1,9 @@
 ---
-title: Siaran
+title: WhatsApp Blast
 sidebar_position: 3
 ---
 
-# Siaran
+# WhatsApp Blast
 
 Gunakan **Broadcast** untuk menghantar kempen kepada kumpulan kenalan atau pelanggan bersegmen.
 
