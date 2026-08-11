@@ -32,3 +32,27 @@
 .hero__subtitle {
   color: rgba(255, 255, 255, 0.9);
 }
+
+.ai-doc-actions {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 0.75rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.ai-doc-actions__title {
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+}
+
+.ai-doc-actions__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ai-doc-actions__note {
+  margin: 0.9rem 0 0;
+  font-size: 0.875rem;
+}

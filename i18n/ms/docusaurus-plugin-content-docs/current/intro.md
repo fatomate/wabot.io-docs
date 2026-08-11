@@ -25,7 +25,7 @@ slug: /intro
 - **[Chatbot AI](/docs/features/chatbots)** — Gunakan AI yang menjawab soalan, menapis prospek, dan menutup jualan 24/7.
 - **[Automasi](/docs/features/automation)** — Kini **Coming Soon** dalam V4. Teruskan aliran kerja automasi sedia ada dalam V3.
 - **[LiveChat](/docs/features/live-chat)** — Inbox pasukan dikongsi untuk WhatsApp dengan penyerahan AI-ke-manusia.
-- **[Auto Reply](/docs/features/Auto Reply)** — Auto Reply berdasarkan kata kunci untuk salam, FAQ, dan sokongan pantas.
+- **[Auto Reply](/docs/features/autoresponder)** — Auto Reply berdasarkan kata kunci untuk salam, FAQ, dan sokongan pantas.
 
 ---
 

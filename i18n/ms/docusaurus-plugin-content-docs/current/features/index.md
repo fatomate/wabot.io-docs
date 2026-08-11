@@ -13,7 +13,7 @@ Wabot menggabungkan keupayaan pemesejan utama dalam satu papan pemuka. Setiap ci
 - **[Chatbot](/docs/features/chatbots)** — Bot berkuasa AI yang menjawab FAQ, menapis prospek, dan menutup jualan 24/7.
 - **[WhatsApp Blast](/docs/features/broadcast)** — Hantar kempen pukal kepada kumpulan kenalan atau segmen dengan penjadualan.
 - **[Automasi](/docs/features/automation)** — Kini **Coming Soon** dalam V4. Teruskan automasi sedia ada dalam V3 sehingga enjin V4 dikeluarkan.
-- **[Auto Reply](/docs/features/Auto Reply)** — Balasan lalai mengikut akaun, dengan sasaran, media, mod AI dan pengecualian; balasan kata kunci juga tersedia.
+- **[Auto Reply](/docs/features/autoresponder)** — Balasan lalai mengikut akaun, dengan sasaran, media, mod AI dan pengecualian; balasan kata kunci juga tersedia.
 - **[LiveChat](/docs/features/live-chat)** — Inbox pasukan dikongsi dengan Semua, Belum Dibaca, Diarkib, dan penapis status, akaun, sumber, laman web atau keutamaan.
 - **[Templat](/docs/features/templates)** — Komponen mesej boleh guna semula: pra-lulus, senarai, butang, undian, urutan, balasan pantas.
 
