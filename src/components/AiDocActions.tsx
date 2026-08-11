@@ -41,6 +41,7 @@ export default function AiDocActions(): ReactNode {
   const localePrefix =
     i18n.currentLocale === i18n.defaultLocale ? '' : `${i18n.currentLocale}/`;
   const markdownPath = useBaseUrl(`${localePrefix}ai/docs/${metadata.id}.md`);
+  const llmsPath = useBaseUrl('llms.txt');
   const prompt = `Use this Wabot.io documentation page as context: ${siteConfig.url}${markdownPath}`;
 
   async function copyPage() {
@@ -89,7 +90,7 @@ export default function AiDocActions(): ReactNode {
             <strong>{labels.claude}</strong>
             <span>{labels.claudeNote}</span>
           </a>
-          <a href={useBaseUrl('llms.txt')} target="_blank" rel="noreferrer">
+          <a href={llmsPath} target="_blank" rel="noreferrer">
             <strong>{labels.llms}</strong>
             <span>{labels.llmsNote}</span>
           </a>
