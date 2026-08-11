@@ -33,26 +33,107 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-.ai-doc-actions {
-  margin-top: 2rem;
-  padding: 1.25rem;
+.ai-doc-content-actions {
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
+
+.ai-doc-menu {
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.ai-doc-menu__trigger {
+  display: flex;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 0.65rem;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.06);
+}
+
+.ai-doc-menu__trigger button {
+  border: 0;
+  border-radius: 0;
+  padding: 0.55rem 0.8rem;
+  background: transparent;
+  color: var(--ifm-font-color-base);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ai-doc-menu__trigger button:hover,
+.ai-doc-menu__trigger button:focus-visible {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.ai-doc-menu__trigger button:focus-visible,
+.ai-doc-menu__panel a:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: -2px;
+}
+
+.ai-doc-menu__toggle {
+  min-width: 2.5rem;
+  border-left: 1px solid var(--ifm-color-emphasis-300) !important;
+  font-size: 1.15rem !important;
+  line-height: 1;
+}
+
+.ai-doc-menu__panel {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  width: 19rem;
+  overflow: hidden;
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 0.75rem;
   background: var(--ifm-background-surface-color);
+  box-shadow: 0 12px 28px rgb(15 23 42 / 0.14);
 }
 
-.ai-doc-actions__title {
-  margin: 0 0 0.75rem;
-  font-weight: 700;
+.ai-doc-menu__panel a {
+  display: block;
+  padding: 0.85rem 1rem;
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
 }
 
-.ai-doc-actions__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.ai-doc-menu__panel a + a {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
 }
 
-.ai-doc-actions__note {
-  margin: 0.9rem 0 0;
-  font-size: 0.875rem;
+.ai-doc-menu__panel a:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.ai-doc-menu__panel strong,
+.ai-doc-menu__panel span {
+  display: block;
+}
+
+.ai-doc-menu__panel strong {
+  font-weight: 650;
+}
+
+.ai-doc-menu__panel span {
+  margin-top: 0.15rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+@media (max-width: 480px) {
+  .ai-doc-content-actions {
+    float: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 0;
+  }
+
+  .ai-doc-menu__panel {
+    width: min(19rem, calc(100vw - 2rem));
+  }
 }
