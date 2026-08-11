@@ -14,10 +14,10 @@ Selamat datang ke Wabot! Bahagian ini membimbing anda melalui semua yang diperlu
 Wabot.io ialah platform automasi WhatsApp serba lengkap yang membolehkan anda:
 
 - Menghantar notifikasi transaksi (pesanan, tempahan, pembayaran)
-- Menjalankan siaran pemasaran kepada senarai kenalan
+- Menjalankan WhatsApp Blast pemasaran kepada senarai kenalan
 - Menggunakan chatbot AI yang mengendalikan FAQ dan menutup jualan
 - Membina automasi tanpa kod yang dicetuskan oleh webhook atau label WhatsApp
-- Menguruskan perbualan dari inbox pasukan yang dikongsi
+- Menguruskan perbualan dari peti masuk pasukan yang dikongsi
 - Menyediakan balasan automatik berdasarkan kata kunci
 
 Ia menyambung ke WhatsApp anda melalui **imbasan kod QR** (seperti WhatsApp Web) atau **API Perniagaan WhatsApp Rasmi** (WABA) untuk perniagaan besar. Anda juga boleh menerbitkan widget web daripada tetapan chatbot akaun yang telah disambungkan.
@@ -26,7 +26,7 @@ Ia menyambung ke WhatsApp anda melalui **imbasan kod QR** (seperti WhatsApp Web)
 
 ## Bagaimana Wabot Berfungsi
 
-1. Pencetus berlaku — pesanan baharu, penyerahan borang, siaran berjadual, kata kunci diterima.
+1. Pencetus berlaku — pesanan baharu, penyerahan borang, WhatsApp Blast berjadual, kata kunci diterima.
 2. Wabot menerima acara melalui plugin, webhook, API, atau penjadualnya sendiri.
 3. Wabot menyusun dan menghantar mesej WhatsApp melalui nombor anda yang dipaut.
 4. Balasan masuk ke LiveChat, chatbot AI, atau enjin automasi Wabot.

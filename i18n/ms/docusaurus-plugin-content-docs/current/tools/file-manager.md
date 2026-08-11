@@ -14,4 +14,4 @@ Kebenaran fail adalah mengikut tindakan. Muat naik, cipta folder, namakan semula
 3. Buka folder, gunakan grid atau senarai, dan klik ikon maklumat untuk pratonton butiran fail.
 4. Gunakan tindakan fail untuk salin URL, ubah nama, pindah, edit kapsyen atau padam jika dibenarkan.
 
-Jangan padam fail yang digunakan oleh siaran, chatbot, automasi atau templat aktif.
+Jangan padam fail yang digunakan oleh WhatsApp Blast, chatbot, automasi atau templat aktif.

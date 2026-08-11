@@ -12,4 +12,4 @@ Klik ikon loceng pada pengepala Dashboard untuk membuka Notifikasi.
 3. Buka notifikasi untuk melihat butiran.
 4. Gunakan tindakan yang tersedia untuk tandakan sebagai dibaca, arkibkan, nyaharkib, atau padam.
 
-Pemilik pasukan boleh membuka **Settings → Notifications** untuk mengurus makluman seperti putus sambungan instance, status siaran, ralat AI chatbot, kegagalan penghantaran, dan kredit AI.
+Pemilik pasukan boleh membuka **Settings → Notifications** untuk mengurus makluman seperti putus sambungan instance, status WhatsApp Blast, ralat AI chatbot, kegagalan penghantaran, dan kredit AI.

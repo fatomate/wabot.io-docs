@@ -5,9 +5,9 @@ sidebar_position: 5
 
 # Auto Reply
 
-Untuk balasan lalai mengikut akaun, buka **Autoresponder**, cari akaun dan klik **Configure**.
+Untuk balasan lalai mengikut akaun, buka **Auto Reply**, cari akaun dan klik **Configure**.
 
-Akaun Website tidak boleh dipilih untuk Autoresponder. Mencipta atau mengemas kini balasan memerlukan kebenaran tulis Autoresponder.
+Akaun Website tidak boleh dipilih untuk Auto Reply. Mencipta atau mengemas kini balasan memerlukan kebenaran tulis Auto Reply.
 
 1. Pilih **Enable** atau **Disable**.
 2. Pilih sasaran **All**, **Individual** atau **Group**.
@@ -19,4 +19,4 @@ Akaun Website tidak boleh dipilih untuk Autoresponder. Mencipta atau mengemas ki
 
 Gunakan **Apply to All** hanya jika balasan yang sama sesuai untuk semua akaun.
 
-Untuk balasan berdasarkan kata kunci, cipta autoresponder dengan nama, akaun atau **All accounts**, kata kunci, kaedah **Contains**, **Exact match** atau **Regular expression**, mesej/media dan lengah 0–3,600 saat.
+Untuk balasan berdasarkan kata kunci, cipta Auto Reply dengan nama, akaun atau **All accounts**, kata kunci, kaedah **Contains**, **Exact match** atau **Regular expression**, mesej/media dan lengah 0–3,600 saat.

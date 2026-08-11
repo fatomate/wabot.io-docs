@@ -9,7 +9,7 @@ sidebar_position: 7
 
 1. Buka tab jenis templat.
 2. Cipta templat, beri nama dalaman, tambah kandungan dan pratonton.
-3. Simpan, kemudian uji dengan penerima terkawal sebelum digunakan dalam chatbot, automasi, Live Chat atau siaran.
+3. Simpan, kemudian uji dengan penerima terkawal sebelum digunakan dalam chatbot, automasi, LiveChat atau WhatsApp Blast.
 
 Untuk **Pre-Approved**, pilih akaun API Rasmi dan klik **Sync**. Templat baharu mesti dicipta serta diluluskan dalam Meta Business Manager sebelum disegerakkan.
 

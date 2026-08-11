@@ -16,4 +16,4 @@ Memadam mesej queue atau mencuba semula mesej gagal memerlukan kebenaran delete 
 5. Gunakan **Retry Selected Messages** hanya untuk mesej gagal selepas puncanya dibetulkan.
 6. Muat semula Queue untuk mengesahkan hasil.
 
-Memadam atau mencuba semula Queue tidak membetulkan siaran, automasi, chatbot atau permintaan API yang menciptanya. Tindakan bagi semua rekod ditapis memerlukan frasa pengesahan.
+Memadam atau mencuba semula Queue tidak membetulkan WhatsApp Blast, automasi, chatbot atau permintaan API yang menciptanya. Tindakan bagi semua rekod ditapis memerlukan frasa pengesahan.
