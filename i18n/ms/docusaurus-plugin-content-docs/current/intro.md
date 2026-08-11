@@ -24,7 +24,7 @@ slug: /intro
 - **[WhatsApp Blast](/docs/features/broadcast)** — Jalankan kempen pemasaran kepada ribuan kenalan dengan penjadualan dan penyasaran.
 - **[Chatbot AI](/docs/features/chatbots)** — Gunakan AI yang menjawab soalan, menapis prospek, dan menutup jualan 24/7.
 - **[Automasi](/docs/features/automation)** — Kini **Coming Soon** dalam V4. Teruskan aliran kerja automasi sedia ada dalam V3.
-- **[Chat Live](/docs/features/live-chat)** — Inbox pasukan dikongsi untuk WhatsApp dengan penyerahan AI-ke-manusia.
+- **[LiveChat](/docs/features/live-chat)** — Inbox pasukan dikongsi untuk WhatsApp dengan penyerahan AI-ke-manusia.
 - **[Auto Reply](/docs/features/autoresponder)** — Auto Reply berdasarkan kata kunci untuk salam, FAQ, dan sokongan pantas.
 
 ---

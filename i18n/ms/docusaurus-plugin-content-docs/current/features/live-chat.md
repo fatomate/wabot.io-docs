@@ -1,9 +1,9 @@
 ---
-title: Chat Live
+title: LiveChat
 sidebar_position: 6
 ---
 
-# Chat Live
+# LiveChat
 
 **Live Chat** ialah inbox pasukan untuk perbualan WhatsApp.
 
